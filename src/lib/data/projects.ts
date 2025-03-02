@@ -4,36 +4,36 @@ import type { Project } from '../types';
 
 export const items: Array<Project> = [
 	{
-		slug: 'slick-portfolio-angular',
+		slug: 'project1',
 		color: '#5e95e3',
 		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+			'Built with flutter and firebase an android/ios application that helps people to exchange skills with ease.',
 		shortDescription:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
-		logo: Assets.Unknown,
-		name: 'Slick Portfolio',
+			'Built with flutter and firebase an android/ios application that helps people to exchange skills with ease.',
+		links: [{ to: 'https://github.com/samrisin/skillxchange', label: 'GitHub' }],
+		logo: Assets.Dart,
+		name: 'SkillXChange',
 		period: {
-			from: new Date()
+			from: new Date(2024,2,1)
 		},
-		skills: getSkills('angular', 'ts', 'tailwind'),
-		type: 'Website Template'
+		skills: getSkills('dart', 'firebase', 'flutter'),
+		type: 'Mobile Application'
 	},
 	{
-		slug: 'slick-portfolio-svelte',
+		slug: 'project2',
 		color: '#ff3e00',
 		description:
-			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
+			'Python model to classify the severity of a fire from an image. The Model classifies image into four categories fire/No_fire and fire level from low to severe. Due to low datasets present for low and moderate fire data, the model currenlty predicts any kind of fire as Severe.',
 		shortDescription:
-			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
-		logo: Assets.Svelte,
-		name: 'Slick Portfolio',
+			'Python model to classify the severity of a fire from an image.',
+		links: [{ to: 'https://github.com/samrisin/FireSeverityModel', label: 'GitHub' }],
+		logo: Assets.Python,
+		name: 'Fire Severity Classifier',
 		period: {
-			from: new Date()
+			from: new Date(2024,4,1)
 		},
-		skills: getSkills('svelte', 'ts', 'tailwind', 'sass'),
-		type: 'Website Template',
+		skills: getSkills('python'),
+		type: 'Machine Learning Model',
 		screenshots: [
 			{
 				label: 'screen 1',
@@ -60,7 +60,38 @@ export const items: Array<Project> = [
 				src: 'https://images.unsplash.com/photo-1585079542156-2755d9c8a094?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHByb2dyYW1taW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
 			}
 		]
+	},
+	{
+		slug: 'project3',
+		color: '#5e95e3',
+		description:
+			'Built with java a multithreaded chat application that uses variety of advanced Java concepts such as multithreading, locks, runnable and notify',
+		shortDescription:'Built with java a multithreaded chat application that uses variety of advanced concepts such as multithreading, locks, runnable and notify',
+		links: [{ to: 'https://github.com/samrisin/skillxchange', label: 'GitHub' }],
+		logo: Assets.Java,
+		name: 'Desktop Application',
+		period: {
+			from: new Date(2024,9,1)
+		},
+		skills: getSkills('java'),
+		type: 'Desktop Application'
+	},
+	{
+		slug: 'project4',
+		color: '#5e95e3',
+		description:
+			'A web application with distributed architecture containing components of client, server and consumer. Build with Java, Rabbitmq, Redis, DynamoDB',
+		shortDescription:'A web application with distributed architecture containing components of client, server and consumer. Build with Java, Rabbitmq, Redis, DynamoDB',
+		links: [{ to: 'https://github.com/samrisin/skillxchange', label: 'GitHub' }],
+		logo: Assets.AWS,
+		name: 'Web Application',
+		period: {
+			from: new Date(2024,12,1)
+		},
+		skills: getSkills('java','aws EC2'),
+		type: 'Web Application'
 	}
+
 ];
 
 export const title = 'Projects';
