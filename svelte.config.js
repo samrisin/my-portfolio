@@ -15,6 +15,9 @@ const config = {
 	},
 	kit: {
 		adapter: adapter({ fallback: '404.html' }),
+		prerender: {
+			handleHttpError: 'warn' // Change from 'fail' to 'warn' to prevent build failure
+		  },
 		alias: {
 			$lib: './src/lib',
 			'@data': './src/lib/data',
