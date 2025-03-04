@@ -90,6 +90,36 @@ export const items: Array<Project> = [
 		},
 		skills: getSkills('java','aws EC2'),
 		type: 'Web Application'
+	},
+	{
+		slug: 'project3',
+		color: '#5e95e3',
+		description:
+			'Built with java a multithreaded chat application that uses variety of advanced Java concepts such as multithreading, locks, runnable and notify',
+		shortDescription:'Built with java a multithreaded chat application that uses variety of advanced concepts such as multithreading, locks, runnable and notify',
+		links: [{ to: 'https://github.com/samrisin/skillxchange', label: 'GitHub' }],
+		logo: Assets.Java,
+		name: 'Desktop Application',
+		period: {
+			from: new Date(2024,9,1)
+		},
+		skills: getSkills('java'),
+		type: 'Desktop Application'
+	},
+	{
+		slug: 'project4',
+		color: '#5e95e3',
+		description:
+			'This project provides a simple IMDb Movie Rating Finder using Python (Flask) for the backend and HTML, CSS, and JavaScript for the frontend. Users can enter a movie name, and the IMDb rating will be fetched and displayed.',
+		shortDescription:'This project provides a simple IMDb Movie Rating Finder using Python (Flask) for the backend and HTML, CSS, and JavaScript for the frontend. Users can enter a movie name, and the IMDb rating will be fetched and displayed.',
+		links: [{ to: 'https://github.com/samrisin/imdb-movie-rating', label: 'GitHub' }],
+		logo: Assets.Python,
+		name: 'Web Application',
+		period: {
+			from: new Date(2025,3,4)
+		},
+		skills: getSkills('Python','Flask','html','js','css'),
+		type: 'Web Application'
 	}
 
 ];
